@@ -8,8 +8,8 @@ take time in other programmes for example take data from DB
 fun main() {
 
 val r1 = Rectangle()
-r1.high = 5
-    r1.width = 12
+r1.high = 20
+    r1.width = 10
     val r2 = r1.clone() as Rectangle
     println("the high and the width of r2 is: ${r1.high} ${r1.width}")
     println("the high and the width of r2 is: ${r2.high} ${r2.width}")
