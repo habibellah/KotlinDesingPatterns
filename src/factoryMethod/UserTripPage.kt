@@ -5,6 +5,6 @@ without create new objects of these classes
  */
 fun main() {
     val factory = Factory()
-    val trip = factory.getFactoryVehicle("Car")
+    val trip = factory.getFactoryVehicle("Boat")
     trip!!.transportWay()
 }
