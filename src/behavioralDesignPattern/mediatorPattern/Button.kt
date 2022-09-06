@@ -1,9 +1,9 @@
 package behavioralDesignPattern.mediatorPattern
 //concrete class of component
-class Button : Component() {
+class Button(iMediator: IMediator) : Component(iMediator) {
 
     fun buttonClicked()
     {
-     iMediator.notifyComponent(this)
+     iMediator.notifyComponent(this,"the button is clicked")
     }
 }

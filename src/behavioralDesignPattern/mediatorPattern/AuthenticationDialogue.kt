@@ -2,23 +2,23 @@ package behavioralDesignPattern.mediatorPattern
 //this is the concrete class of IMediator where its object make connection with all component to avoid
 //coupling between components
 class AuthenticationDialogue : IMediator{
-    override fun notifyComponent(component: Component) {
+    override fun notifyComponent(component: Component,event:String) {
         if(component is Button)
         {
-            buttonIsClicked()
+            buttonIsClicked(event)
         }else if(component is CheckBox)
         {
-            checkBoxIsChecked()
+            checkBoxIsChecked(event)
         }
     }
 
-    private fun buttonIsClicked()
+    private fun buttonIsClicked(event: String)
     {
-        println("the button is clicked")
+        println(event)
     }
 
-    private fun checkBoxIsChecked()
+    private fun checkBoxIsChecked(event: String)
     {
-        println("the check box is Checked")
+        println(event)
     }
 }
