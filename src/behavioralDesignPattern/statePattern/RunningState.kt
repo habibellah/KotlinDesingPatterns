@@ -7,6 +7,6 @@ class RunningState : RunState{
 
 
     override fun explainState() {
-        println("iam running")
+        println(" iam running ")
     }
 }

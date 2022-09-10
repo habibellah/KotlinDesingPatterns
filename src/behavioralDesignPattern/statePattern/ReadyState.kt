@@ -7,6 +7,6 @@ class ReadyState : RunState{
 
 
     override fun explainState() {
-        println("iam ready to run")
+        println(" iam ready to run ")
     }
 }

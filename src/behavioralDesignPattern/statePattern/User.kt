@@ -13,7 +13,6 @@ fun main() {
     val context = Context(readyState)
     context.explainCurrentState()
     //the concrete class itself can change state by using a context object
-    //the concrete class itself can change state by using a context object
     readyState.context = context
     readyState.context.changeState(runningState)
     context.explainCurrentState()

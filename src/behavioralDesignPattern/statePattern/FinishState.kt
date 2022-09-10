@@ -7,6 +7,6 @@ class FinishState : RunState{
 
 
     override fun explainState() {
-        println("i finished")
+        println(" i finished ")
     }
 }

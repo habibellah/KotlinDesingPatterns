@@ -7,7 +7,6 @@ class Context (private var runState: RunState){
     {
         this.runState = runState
     }
-
     fun explainCurrentState()
     {
         this.runState.explainState()
